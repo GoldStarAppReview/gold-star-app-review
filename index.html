@@ -93,23 +93,15 @@
       width: 100%;
       border-collapse: collapse;
       font-size: 0.95rem;
-      table-layout: fixed;
     }
     th, td {
       border: 1px solid black;
       padding: 0.75rem;
       text-align: center;
-      height: 60px;
     }
     th {
       background-color: #800000;
       color: white;
-    }
-    td:first-child, th:first-child {
-      width: 30%;
-    }
-    td:not(:first-child), th:not(:first-child) {
-      width: 17.5%;
     }
     .star {
       color: gold;
@@ -139,68 +131,88 @@
 
   <div class="content">
     <div class="top-row">
-      <div class="half-section" id="home">
+      <section id="home" class="section half-section">
         <h2>Our Story</h2>
-        <p>I have 10 years of progressive professional experience across a variety of industries, and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University, and an MBA from the Kellogg School of Management.</p>
-        <p>My wife is a practicing Physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University, and her MD from the Texas Tech Health Sciences Center School of Medicine. She is also a DFW native, having graduated from the Texas Academy of Math and Science in Denton.</p>
-        <p>We are also parents to a son, who will be matriculating into a DFW area private school this fall.</p>
-      </div>
-      <div class="half-section" id="services">
+        <p>As DFW-based parents of two children, we began Gold Star Application Review with the mission of helping families in the metroplex achieve their academic goals.</p>
+        <p>When navigating the DFW private school admissions landscape for our oldest son, we found ourselves overwhelmed with information from schools, online forums, and parent groups. After identifying schools that resonated with our child the most, we wanted to make sure that we were crafting an application package that highlighted his personality, while demonstrating our family's fit within the school's broader community.</p>
+        <p>While we considered working with one of the many existing comprehensive admissions consulting practices, what we really needed was impartial, candid, firsthand feedback from parents within the community, to help supplement our own research.</p>
+        <p>In this spirit, Gold Star Application Review seeks to support families by:</p>
+        <ul>
+          <li><em>Providing guidance on best practices for engaging with the school community prior to application submission</em></li>
+          <li><em>Helping craft and review parent statements/admissions essays</em></li>
+          <li><em>Preparing parents and students for interviews through mock sessions</em></li>
+        </ul>
+        <p>We are <strong style="color: green;">not</strong> career academic consultants. We are parents who are excited to share our learnings with prospective families, while providing open and honest feedback to help guide students to outcomes that are the best for them.</p>
+      </section>
+
+      <section id="services" class="section half-section">
         <h2>Services</h2>
+        <p>We specialize in helping applicant families navigate the admissions processes across a wide range of academic levels, including:</p>
         <table>
           <tr>
-            <th>Service</th>
-            <th>Preschool</th>
-            <th>Elementary</th>
-            <th>Middle</th>
-            <th>High School</th>
+            <th>Academic Level</th>
+            <th>School Selection</th>
+            <th>Essay Review</th>
+            <th>Test Prep</th>
+            <th>Interview Prep</th>
           </tr>
           <tr>
-            <td>Comprehensive Application Review</td>
-            <td><span class="star">★</span></td>
-            <td><span class="star">★</span></td>
-            <td><span class="star">★</span></td>
-            <td><span class="star">★</span></td>
+            <td>Lower School Entry – Private Schools</td>
+            <td></td>
+            <td class="star">★</td>
+            <td></td>
+            <td class="star">★</td>
           </tr>
           <tr>
-            <td>Essay and Short Answer Review</td>
+            <td>Upper School Entry – Private Schools</td>
             <td></td>
-            <td><span class="star">★</span></td>
-            <td><span class="star">★</span></td>
-            <td><span class="star">★</span></td>
+            <td class="star">★</td>
+            <td></td>
+            <td class="star">★</td>
           </tr>
           <tr>
-            <td>Interview Preparation</td>
-            <td></td>
-            <td><span class="star">★</span></td>
-            <td><span class="star">★</span></td>
-            <td><span class="star">★</span></td>
+            <td>Undergraduate Admissions</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
           </tr>
           <tr>
-            <td>Admissions Strategy Consulting</td>
+            <td>Graduate Admissions</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
             <td></td>
+            <td class="star">★</td>
+          </tr>
+          <tr>
+            <td>Professional Program Admissions (MBA/MD)</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
             <td></td>
-            <td><span class="star">★</span></td>
-            <td><span class="star">★</span></td>
+            <td class="star">★</td>
           </tr>
         </table>
-      </div>
+      </section>
     </div>
 
-    <div class="centered-section" id="about">
+    <section id="about" class="section centered-section">
       <h2>About Us</h2>
-      <p>We are passionate about helping students and their families navigate the increasingly competitive private school admissions process. We believe every child has unique strengths, and our goal is to help families present their child's story in the most compelling and authentic way possible.</p>
-    </div>
+      <p>I have over a decade of professional experience across a variety of industries and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University and an MBA from the Kellogg School of Management.</p>
+      <p>My wife is a practicing physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University and her MD from the Texas Tech Health Sciences Center School of Medicine. She is also a DFW native, having graduated from the Texas Academy of Math and Science in Denton.</p>
+      <p>We are proud parents of two children, with our oldest son preparing to matriculate into a private school in the area this fall.</p>
+    </section>
 
-    <div class="centered-section" id="contact">
+    <section id="contact" class="section centered-section">
       <h2>Contact Us</h2>
-      <form class="contact-form" action="mailto:goldstarappreview@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <p>Please fill out the form below to request more information about our services:</p>
+      <form class="contact-form" action="https://formsubmit.co/goldstarappreview@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="How can we help you?" rows="4"></textarea>
+        <button type="submit">Submit</button>
       </form>
-    </div>
+    </section>
   </div>
 
   <footer>
