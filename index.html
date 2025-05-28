@@ -12,7 +12,7 @@
       color: #333;
     }
     header {
-      background-color: #a52a2a; /* Match background of the logo */
+      background-color: #a52a2a;
       padding: 1rem;
       display: flex;
       justify-content: center;
@@ -33,17 +33,19 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .hero {
-      background: url('your-logo-or-image.png') no-repeat center center;
-      background-size: contain;
-      height: 200px;
-      text-align: center;
-      padding: 2rem;
-    }
     .content {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 2rem auto;
       padding: 1rem;
+    }
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .half-section {
+      width: 48%;
+      box-sizing: border-box;
     }
     .section {
       margin-bottom: 2rem;
@@ -84,6 +86,9 @@
       color: gold;
       font-size: 1.5rem;
     }
+    .centered-section {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -98,68 +103,79 @@
   </nav>
 
   <div class="content">
-    <section id="home" class="section">
-      <h2>Welcome</h2>
-      <p>At Gold Star Application Review, we specialize in helping students put their best foot forward in academic applications. Our expert reviewers are here to guide and refine every detail of your application materials.</p>
-    </section>
+    <div class="top-row">
+      <section id="home" class="section half-section">
+        <h2>Our Story</h2>
+        <p>As DFW based parents of two children, my wife and I began Gold Star Application Review with the mission of helping families in the metroplex achieve their academic goals.</p>
+        <p>When navigating the DFW private school admissions landscape for our oldest son, we found ourselves overwhelmed with information from schools, online forums, and parent groups. After identifying schools that resonated with our child the most, we wanted to make sure that we were crafting an application package that highlighted his personality, while demonstrating our family's fit within the school's broader community.</p>
+        <p>While we considered working with one of the many existing comprehensive admissions consulting practices, what we really needed was impartial, candid, firsthand feedback from parents within the community, to help supplement our own research.</p>
+        <p>In this spirit, Gold Star Application Review seeks to support families by:</p>
+        <ul>
+          <li><em>Providing guidance into best practices on engaging with the school community prior to application submission</em></li>
+          <li><em>Helping craft, and review parent statements/admissions essays</em></li>
+          <li><em>Preparing parents and students for interviews through mock sessions</em></li>
+        </ul>
+        <p>We are <strong style="color: green;">not</strong> career academic consultants. We are parents who are excited to share our learnings with prospective families, while providing open and honest feedback to help guide students to outcomes that are the best for them.</p>
+      </section>
 
-    <section id="about" class="section">
+      <section id="services" class="section half-section">
+        <h2>Services</h2>
+        <p>We specialize in helping applicant families navigate the admissions processes across a wide range of academic levels, including:</p>
+        <table>
+          <tr>
+            <th>Academic Level</th>
+            <th>School Selection</th>
+            <th>Essay Review</th>
+            <th>Test Prep</th>
+            <th>Interview Prep</th>
+          </tr>
+          <tr>
+            <td>Lower School Entry – Private Schools</td>
+            <td></td>
+            <td class="star">★</td>
+            <td></td>
+            <td class="star">★</td>
+          </tr>
+          <tr>
+            <td>Upper School Entry – Private Schools</td>
+            <td></td>
+            <td class="star">★</td>
+            <td></td>
+            <td class="star">★</td>
+          </tr>
+          <tr>
+            <td>Undergraduate Admissions</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
+          </tr>
+          <tr>
+            <td>Graduate Admissions</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
+            <td></td>
+            <td class="star">★</td>
+          </tr>
+          <tr>
+            <td>Professional Program Admissions (MBA/MD)</td>
+            <td class="star">★</td>
+            <td class="star">★</td>
+            <td></td>
+            <td class="star">★</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+    <section id="about" class="section centered-section">
       <h2>About Us</h2>
       <p>I have 10 years of progressive professional experience across a variety of industries, and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University, and an MBA from the Kellogg School of Management.</p>
       <p>My wife is a practicing Physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University, and her MD from the Texas Tech Health Sciences Center School of Medicine. She is also a DFW native, having graduated from the Texas Academy of Math and Science in Denton.</p>
       <p>We are also parents to a son, who will be matriculating into a DFW area private school this fall.</p>
     </section>
 
-    <section id="services" class="section">
-      <h2>Services</h2>
-      <p>We specialize in helping applicant families navigate the admissions processes across a wide range of academic levels, including:</p>
-      <table>
-        <tr>
-          <th>Academic Level</th>
-          <th>School Selection</th>
-          <th>Essay Review</th>
-          <th>Test Prep</th>
-          <th>Interview Prep</th>
-        </tr>
-        <tr>
-          <td>Lower School Entry – Private Schools</td>
-          <td></td>
-          <td class="star">★</td>
-          <td></td>
-          <td class="star">★</td>
-        </tr>
-        <tr>
-          <td>Upper School Entry – Private Schools</td>
-          <td></td>
-          <td class="star">★</td>
-          <td></td>
-          <td class="star">★</td>
-        </tr>
-        <tr>
-          <td>Undergraduate Admissions</td>
-          <td class="star">★</td>
-          <td class="star">★</td>
-          <td class="star">★</td>
-          <td class="star">★</td>
-        </tr>
-        <tr>
-          <td>Graduate Admissions</td>
-          <td class="star">★</td>
-          <td class="star">★</td>
-          <td></td>
-          <td class="star">★</td>
-        </tr>
-        <tr>
-          <td>Professional Program Admissions (MBA/MD)</td>
-          <td class="star">★</td>
-          <td class="star">★</td>
-          <td></td>
-          <td class="star">★</td>
-        </tr>
-      </table>
-    </section>
-
-    <section id="contact" class="section">
+    <section id="contact" class="section centered-section">
       <h2>Contact Us</h2>
       <p>Please fill out the form below to request more information about our services:</p>
       <form class="contact-form" action="https://formsubmit.co/goldstarappreview@gmail.com" method="POST">
