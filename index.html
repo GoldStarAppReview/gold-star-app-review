@@ -15,6 +15,16 @@
       background-color: #800000;
       color: #fff;
       padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      max-height: 60px;
+      margin-right: 1rem;
+    }
+    .title-section {
+      flex-grow: 1;
       text-align: center;
     }
     nav {
@@ -63,12 +73,31 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    th {
+      background-color: #eee;
+    }
+    .star {
+      color: gold;
+      font-size: 1.5rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Gold Star Application Review</h1>
-    <p><em>Sit Puer Floreat</em></p>
+    <img src="logo.png" alt="Gold Star Logo" class="logo">
+    <div class="title-section">
+      <h1>Gold Star Application Review</h1>
+      <p><em>Sit Puer Floreat</em></p>
+    </div>
   </header>
   <nav>
     <a href="#home">Home</a>
@@ -85,23 +114,64 @@
 
     <section id="about" class="section">
       <h2>About Us</h2>
-      <p>Founded on the principle of academic excellence, Gold Star Application Review provides tailored support for students applying to high schools, colleges, and graduate programs. Our team consists of experienced educators and admissions professionals.</p>
+      <p>I have 10 years of progressive professional experience across a variety of industries, and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University, and an MBA from the Kellogg School of Management.</p>
+      <p>My wife is a practicing Physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University, and her MD from the Texas Tech Health Sciences Center School of Medicine. She is also a DFW native, having graduated from the Texas Academy of Math and Science in Denton.</p>
+      <p>We are also parents to a son, who will be matriculating into a DFW area private school this fall.</p>
     </section>
 
     <section id="services" class="section">
       <h2>Services</h2>
-      <ul>
-        <li>Personal Statement Editing</li>
-        <li>Resume and CV Review</li>
-        <li>Mock Interviews</li>
-        <li>Application Strategy Consultations</li>
-      </ul>
+      <p>We specialize in helping applicant families navigate the admissions processes across a wide range of academic levels, including:</p>
+      <table>
+        <tr>
+          <th>Academic Level</th>
+          <th>School Selection</th>
+          <th>Essay Review</th>
+          <th>Test Prep</th>
+          <th>Interview Prep</th>
+        </tr>
+        <tr>
+          <td>Lower School Entry – Private Schools</td>
+          <td></td>
+          <td class="star">★</td>
+          <td></td>
+          <td class="star">★</td>
+        </tr>
+        <tr>
+          <td>Upper School Entry – Private Schools</td>
+          <td></td>
+          <td class="star">★</td>
+          <td></td>
+          <td class="star">★</td>
+        </tr>
+        <tr>
+          <td>Undergraduate Admissions</td>
+          <td class="star">★</td>
+          <td class="star">★</td>
+          <td class="star">★</td>
+          <td class="star">★</td>
+        </tr>
+        <tr>
+          <td>Graduate Admissions</td>
+          <td class="star">★</td>
+          <td class="star">★</td>
+          <td></td>
+          <td class="star">★</td>
+        </tr>
+        <tr>
+          <td>Professional Program Admissions (MBA/MD)</td>
+          <td class="star">★</td>
+          <td class="star">★</td>
+          <td></td>
+          <td class="star">★</td>
+        </tr>
+      </table>
     </section>
 
     <section id="contact" class="section">
       <h2>Contact Us</h2>
       <p>Please fill out the form below to request more information about our services:</p>
-      <form class="contact-form">
+      <form class="contact-form" action="mailto:goldstarappreview@gmail.com" method="POST" enctype="text/plain">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="How can we help you?" rows="4"></textarea>
