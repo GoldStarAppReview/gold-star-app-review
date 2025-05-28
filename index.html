@@ -8,30 +8,32 @@
     body {
       margin: 0;
       font-family: 'Abadi', sans-serif;
-      background-color: #fdf6e3;
-      color: #333;
+      background-color: #fdfaf5;
+      color: #222;
     }
     header {
-      background-color: #a52a2a;
-      padding: 1rem;
+      background-color: #6a1b1a;
+      padding: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     .logo {
-      max-height: 100px;
+      max-height: 120px;
     }
     nav {
-      background-color: #a52a2a;
+      background-color: #6a1b1a;
       display: flex;
       justify-content: center;
-      padding: 0.5rem;
+      padding: 0.75rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     nav a {
       color: #fff;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
     }
     .content {
       max-width: 1200px;
@@ -42,28 +44,39 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      gap: 2rem;
     }
     .half-section {
-      width: 48%;
+      width: 100%;
+      max-width: 580px;
       box-sizing: border-box;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
     .section {
       margin-bottom: 2rem;
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
-      padding: 0.5rem;
+      padding: 0.75rem;
       margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
     }
     .contact-form button {
-      background-color: #800000;
+      background-color: #6a1b1a;
       color: white;
-      padding: 0.5rem 1rem;
+      padding: 0.75rem 1.25rem;
       border: none;
+      border-radius: 4px;
       cursor: pointer;
+      font-size: 1rem;
     }
     footer {
-      background-color: #800000;
+      background-color: #6a1b1a;
       color: white;
       text-align: center;
       padding: 1rem;
@@ -72,14 +85,15 @@
     table {
       width: 100%;
       border-collapse: collapse;
+      font-size: 0.95rem;
     }
     th, td {
       border: 1px solid black;
-      padding: 0.5rem;
+      padding: 0.75rem;
       text-align: center;
     }
     th {
-      background-color: #a0522d;
+      background-color: #800000;
       color: white;
     }
     .star {
@@ -88,6 +102,12 @@
     }
     .centered-section {
       text-align: center;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin: 2rem auto;
+      max-width: 800px;
     }
   </style>
 </head>
