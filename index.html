@@ -19,7 +19,8 @@
       align-items: center;
     }
     .logo {
-      max-height: 120px;
+      max-height: 180px;
+      width: auto;
     }
     nav {
       background-color: #6a1b1a;
@@ -27,10 +28,11 @@
       justify-content: center;
       padding: 0.75rem;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
     }
     nav a {
       color: #fff;
-      margin: 0 1rem;
+      margin: 0.5rem 1rem;
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1rem;
@@ -47,13 +49,18 @@
       gap: 2rem;
     }
     .half-section {
-      width: 100%;
+      flex: 1 1 100%;
       max-width: 580px;
       box-sizing: border-box;
       background: #fff;
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    @media (min-width: 768px) {
+      .half-section {
+        flex: 1 1 45%;
+      }
     }
     .section {
       margin-bottom: 2rem;
@@ -209,10 +216,6 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 Gold Star Application Review</p>
-  </footer>
-</body>
-</html>
     <p>&copy; 2025 Gold Star Application Review</p>
   </footer>
 </body>
