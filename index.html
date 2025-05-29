@@ -97,33 +97,40 @@
       font-size: 0.95rem;
       color: #555;
     }
-.bio-block img.about-photo {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.bio-block img.about-photo:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 600px) {
-  .bio-block {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .bio-block img.about-photo {
-    margin: 0 auto 1rem auto;
-    display: block;
-  }
-  .bio-block div {
-    text-align: left;
-  }
-}
+.bio-block {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .bio-block img.about-photo {
+      width: 140px;
+      height: auto;
+      border-radius: 50%;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .bio-block img.about-photo:hover {
+      transform: scale(1.05);
+    }
+    .bio-block div {
+      flex: 1;
+    }
+    @media (max-width: 600px) {
+      .bio-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .bio-block img.about-photo {
+        margin: 0 auto 1rem auto;
+        display: block;
+      }
+      .bio-block div {
+        text-align: left;
+      }
+    }
     .contact-form input,
     .contact-form textarea {
       width: 100%;
@@ -236,7 +243,7 @@
       <div class="bio-block">
         <img src="Ash_Circular.png" alt="Ash" class="about-photo">
         <div>
-          <p>Ash has over a decade of professional experience across a variety of industries and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University and an MBA from the Kellogg School of Management.</p>
+          <p>Ashwin has over a decade of professional experience across a variety of industries and currently serves in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University and an MBA from the Kellogg School of Management.</p>
         </div>
       </div>
       <div class="bio-block">
