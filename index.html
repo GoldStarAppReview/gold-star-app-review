@@ -65,8 +65,40 @@
     .section {
       margin-bottom: 2rem;
     }
-    .contact-form input,
-    .contact-form textarea {
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #6a1b1a;
+    }
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .card ul li {
+      margin: 0.5rem 0;
+    }
+    .star {
+      color: gold;
+      font-size: 1.8rem;
+      margin-left: 0.5rem;
+    }
+    .centered-section {
+      text-align: center;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+    .contact-form input, .contact-form textarea {
       width: 100%;
       padding: 0.75rem;
       margin: 0.5rem 0;
@@ -90,39 +122,11 @@
       padding: 1rem;
       margin-top: 2rem;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.95rem;
-    }
-    th,
-    td {
-      border: 1px solid black;
-      padding: 0.75rem;
-      text-align: center;
-    }
-    th {
-      background-color: #800000;
-      color: white;
-    }
-    .star {
-      color: gold;
-      font-size: 2rem; /* Increased star size */
-    }
-    .centered-section {
-      text-align: center;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      margin: 2rem auto;
-      max-width: 800px;
-    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Gold Star Logo" class="logo" />
+    <img src="logo.png" alt="Gold Star Logo" class="logo">
   </header>
   <nav>
     <a href="#home">Home</a>
@@ -150,50 +154,56 @@
       <section id="services" class="section half-section">
         <h2>Services</h2>
         <p>We specialize in helping applicant families navigate the admissions processes across a wide range of academic levels, including:</p>
-        <table>
-          <tr>
-            <th>Academic Level</th>
-            <th>School Selection</th>
-            <th>Essay Review</th>
-            <th>Test Prep</th>
-            <th>Interview Prep</th>
-          </tr>
-          <tr>
-            <td>Lower School Entry – Private Schools</td>
-            <td></td>
-            <td class="star">★</td>
-            <td></td>
-            <td class="star">★</td>
-          </tr>
-          <tr>
-            <td>Upper School Entry – Private Schools</td>
-            <td></td>
-            <td class="star">★</td>
-            <td></td>
-            <td class="star">★</td>
-          </tr>
-          <tr>
-            <td>Undergraduate Admissions</td>
-            <td class="star">★</td>
-            <td class="star">★</td>
-            <td class="star">★</td>
-            <td class="star">★</td>
-          </tr>
-          <tr>
-            <td>Graduate Admissions</td>
-            <td class="star">★</td>
-            <td class="star">★</td>
-            <td></td>
-            <td class="star">★</td>
-          </tr>
-          <tr>
-            <td>Professional Program Admissions (MBA/MD)</td>
-            <td class="star">★</td>
-            <td class="star">★</td>
-            <td></td>
-            <td class="star">★</td>
-          </tr>
-        </table>
+
+        <div class="card">
+          <h3>Lower School Entry – Private Schools</h3>
+          <ul>
+            <li>School Selection:</li>
+            <li>Essay Review:<span class="star">★</span></li>
+            <li>Test Prep:</li>
+            <li>Interview Prep:<span class="star">★</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Upper School Entry – Private Schools</h3>
+          <ul>
+            <li>School Selection:</li>
+            <li>Essay Review:<span class="star">★</span></li>
+            <li>Test Prep:</li>
+            <li>Interview Prep:<span class="star">★</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Undergraduate Admissions</h3>
+          <ul>
+            <li>School Selection:<span class="star">★</span></li>
+            <li>Essay Review:<span class="star">★</span></li>
+            <li>Test Prep:<span class="star">★</span></li>
+            <li>Interview Prep:<span class="star">★</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Graduate Admissions</h3>
+          <ul>
+            <li>School Selection:<span class="star">★</span></li>
+            <li>Essay Review:<span class="star">★</span></li>
+            <li>Test Prep:</li>
+            <li>Interview Prep:<span class="star">★</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Professional Program Admissions (MBA/MD)</h3>
+          <ul>
+            <li>School Selection:<span class="star">★</span></li>
+            <li>Essay Review:<span class="star">★</span></li>
+            <li>Test Prep:</li>
+            <li>Interview Prep:<span class="star">★</span></li>
+          </ul>
+        </div>
       </section>
     </div>
 
@@ -208,7 +218,7 @@
       <h2>Contact Us</h2>
       <p>Please fill out the form below to request more information about our services:</p>
       <form class="contact-form" action="https://formsubmit.co/goldstarappreview@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="How can we help you?" rows="4"></textarea>
