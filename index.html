@@ -61,6 +61,9 @@
       .half-section {
         flex: 1 1 45%;
       }
+      .top-row {
+        flex-direction: row-reverse;
+      }
     }
     .section {
       margin-bottom: 2rem;
@@ -95,13 +98,15 @@
       margin-right: 0.5rem;
     }
     .centered-section {
-      text-align: left;
       background: #fff;
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       margin: 2rem auto;
       max-width: 800px;
+    }
+    .welcome-section {
+      text-align: left;
     }
     .cards-grid {
       display: grid;
@@ -148,7 +153,7 @@
   </nav>
 
   <div class="content">
-    <section id="welcome" class="section centered-section">
+    <section id="welcome" class="section centered-section welcome-section">
       <h2>Welcome</h2>
       <p>Welcome to Gold Star! Operated by DFW locals, our objective is to help families and individuals around the metroplex navigate complex admissions processes across the entire academic spectrum. We are veterans of a variety of admissions cycles, spanning from Pre-K and College, all the way through various Graduate and Professional programs, and we hope our experience and expertise can help clients land the perfect outcomes for themselves or their families.</p>
     </section>
@@ -162,44 +167,44 @@
           <div class="card">
             <h3>Lower School Entry – Private Schools</h3>
             <ul>
-              <li><span class="star">★</span> Essay Review</li>
-              <li><span class="star">★</span> Interview Prep</li>
+              <li><span class="star">★</span>Essay Review</li>
+              <li><span class="star">★</span>Interview Prep</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>Upper School Entry – Private Schools</h3>
             <ul>
-              <li><span class="star">★</span> Essay Review</li>
-              <li><span class="star">★</span> Interview Prep</li>
+              <li><span class="star">★</span>Essay Review</li>
+              <li><span class="star">★</span>Interview Prep</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>Undergraduate Admissions</h3>
             <ul>
-              <li><span class="star">★</span> School Selection</li>
-              <li><span class="star">★</span> Essay Review</li>
-              <li><span class="star">★</span> Test Prep</li>
-              <li><span class="star">★</span> Interview Prep</li>
+              <li><span class="star">★</span>School Selection</li>
+              <li><span class="star">★</span>Essay Review</li>
+              <li><span class="star">★</span>Test Prep</li>
+              <li><span class="star">★</span>Interview Prep</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>Graduate Admissions</h3>
             <ul>
-              <li><span class="star">★</span> School Selection</li>
-              <li><span class="star">★</span> Essay Review</li>
-              <li><span class="star">★</span> Interview Prep</li>
+              <li><span class="star">★</span>School Selection</li>
+              <li><span class="star">★</span>Essay Review</li>
+              <li><span class="star">★</span>Interview Prep</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>Professional Program Admissions (MBA/MD)</h3>
             <ul>
-              <li><span class="star">★</span> School Selection</li>
-              <li><span class="star">★</span> Essay Review</li>
-              <li><span class="star">★</span> Interview Prep</li>
+              <li><span class="star">★</span>School Selection</li>
+              <li><span class="star">★</span>Essay Review</li>
+              <li><span class="star">★</span>Interview Prep</li>
             </ul>
           </div>
         </div>
@@ -208,21 +213,13 @@
 
       <section id="home" class="section half-section">
         <h2>Our Story</h2>
-        <p>As DFW-based parents of two children, we began Gold Star Application Review with the mission of helping families in the metroplex achieve their academic goals.</p>
-        <p>When navigating the private school admissions landscape for our oldest son, we often felt overwhelmed by the sheer volume of information from schools, online forums, and parent groups. After narrowing down the schools that resonated with our family, we wanted to ensure that our application package authentically reflected our child’s personality and conveyed how our family would contribute to the broader school community.</p>
-        <p>While we considered working with one of the many existing comprehensive admissions consulting practices, what we really needed was impartial, candid, firsthand feedback from parents within the community, to help supplement our own research.</p>
-        <p>In this spirit, Gold Star Application Review seeks to support families by:</p>
-        <ul>
-          <li><em>Providing guidance on best practices for engaging with the school community prior to application submission</em></li>
-          <li><em>Helping craft and review parent statements/admissions essays</em></li>
-          <li><em>Preparing parents and students for interviews through mock sessions</em></li>
-        </ul>
-        <p>We are <strong style="color: green;">not</strong> career academic consultants. We are parents who are excited to share our learnings with prospective families, while providing open and honest feedback to help guide students to outcomes that are the best for them.</p>
+        <p>As DFW-based parents of two children, we began Gold Star Application Review with the mission of helping families in the metroplex achieve their academic goals...</p>
 
         <h2 id="about">About Us</h2>
-        <p>I have over a decade of professional experience across a variety of industries and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University and an MBA from the Kellogg School of Management.</p>
-        <p>My wife is a practicing physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University and her MD from the Texas Tech Health Sciences Center School of Medicine. She is also a DFW native, having graduated from the Texas Academy of Math and Science in Denton.</p>
-        <p>We are proud parents of two children, with our oldest son preparing to matriculate into a private school in the area this fall.</p>
+        <img src="Ash_Circular.png" alt="Ash" style="max-width: 160px; border-radius: 50%; display: block; margin-bottom: 1rem;" />
+        <p>I have over a decade of professional experience across a variety of industries and currently serve in a leadership position at a Fortune 100 company in the DFW area...</p>
+        <img src="Meena_Circular.png" alt="Meena" style="max-width: 160px; border-radius: 50%; display: block; margin: 2rem 0 1rem;" />
+        <p>My wife is a practicing physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University and her MD from the Texas Tech Health Sciences Center School of Medicine...</p>
       </section>
     </div>
 
@@ -240,6 +237,10 @@
   </div>
 
   <footer>
+    <p>&copy; 2025 Gold Star Application Review</p>
+  </footer>
+</body>
+</html>
     <p>&copy; 2025 Gold Star Application Review</p>
   </footer>
 </body>
