@@ -27,7 +27,6 @@
       display: flex;
       justify-content: center;
       padding: 0.75rem;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       flex-wrap: wrap;
     }
     nav a {
@@ -61,41 +60,9 @@
       .half-section {
         flex: 1 1 45%;
       }
-      .top-row {
-        flex-direction: row-reverse;
-      }
     }
     .section {
       margin-bottom: 2rem;
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-    .contact-form button {
-      background-color: #6a1b1a;
-      color: white;
-      padding: 0.75rem 1.25rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    footer {
-      background-color: #6a1b1a;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    .star {
-      color: gold;
-      font-size: 1.8rem;
-      margin-right: 0.5rem;
     }
     .centered-section {
       background: #fff;
@@ -105,7 +72,7 @@
       margin: 2rem auto;
       max-width: 800px;
     }
-    .welcome-section {
+    .left-aligned {
       text-align: left;
     }
     .cards-grid {
@@ -129,14 +96,23 @@
     }
     .card li {
       margin: 0.5rem 0;
-      display: flex;
-      align-items: center;
     }
     .note {
       margin-top: 2rem;
       font-style: italic;
       font-size: 0.95rem;
       color: #555;
+    }
+    .star {
+      color: gold;
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+    .profile-pic {
+      max-width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 1rem auto;
     }
   </style>
 </head>
@@ -146,14 +122,14 @@
   </header>
   <nav>
     <a href="#welcome">Welcome</a>
-    <a href="#services">Services</a>
     <a href="#home">Our Story</a>
     <a href="#about">About Us</a>
+    <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <div class="content">
-    <section id="welcome" class="section centered-section welcome-section">
+    <section id="welcome" class="section centered-section left-aligned">
       <h2>Welcome</h2>
       <p>Welcome to Gold Star! Operated by DFW locals, our objective is to help families and individuals around the metroplex navigate complex admissions processes across the entire academic spectrum. We are veterans of a variety of admissions cycles, spanning from Pre-K and College, all the way through various Graduate and Professional programs, and we hope our experience and expertise can help clients land the perfect outcomes for themselves or their families.</p>
     </section>
@@ -161,7 +137,7 @@
     <div class="top-row">
       <section id="services" class="section half-section">
         <h2>Services</h2>
-        <p>We specialize in helping applicant families navigate the admissions processes across a wide range of academic levels, including:</p>
+        <p>We specialize in helping applicant families navigate the admissions processes across a wide range of academic levels:</p>
 
         <div class="cards-grid">
           <div class="card">
@@ -213,13 +189,23 @@
 
       <section id="home" class="section half-section">
         <h2>Our Story</h2>
-        <p>As DFW-based parents of two children, we began Gold Star Application Review with the mission of helping families in the metroplex achieve their academic goals...</p>
+        <p>As DFW-based parents of two children, we began Gold Star Application Review with the mission of helping families in the metroplex achieve their academic goals.</p>
+        <p>When navigating the private school admissions landscape for our oldest son, we often felt overwhelmed by the sheer volume of information from schools, online forums, and parent groups. After narrowing down the schools that resonated with our family, we wanted to ensure that our application package authentically reflected our child’s personality and conveyed how our family would contribute to the broader school community.</p>
+        <p>While we considered working with one of the many existing comprehensive admissions consulting practices, what we really needed was impartial, candid, firsthand feedback from parents within the community, to help supplement our own research.</p>
+        <p>In this spirit, Gold Star Application Review seeks to support families by:</p>
+        <ul>
+          <li><em>Providing guidance on best practices for engaging with the school community prior to application submission</em></li>
+          <li><em>Helping craft and review parent statements/admissions essays</em></li>
+          <li><em>Preparing parents and students for interviews through mock sessions</em></li>
+        </ul>
+        <p>We are <strong style="color: green;">not</strong> career academic consultants. We are parents who are excited to share our learnings with prospective families, while providing open and honest feedback to help guide students to outcomes that are the best for them.</p>
 
         <h2 id="about">About Us</h2>
-        <img src="Ash_Circular.png" alt="Ash" style="max-width: 160px; border-radius: 50%; display: block; margin-bottom: 1rem;" />
-        <p>I have over a decade of professional experience across a variety of industries and currently serve in a leadership position at a Fortune 100 company in the DFW area...</p>
-        <img src="Meena_Circular.png" alt="Meena" style="max-width: 160px; border-radius: 50%; display: block; margin: 2rem 0 1rem;" />
-        <p>My wife is a practicing physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University and her MD from the Texas Tech Health Sciences Center School of Medicine...</p>
+        <img src="Ash_Circular.png" alt="Ash Profile" class="profile-pic" />
+        <p>I have over a decade of professional experience across a variety of industries and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University and an MBA from the Kellogg School of Management.</p>
+        <img src="Meena_Circular.png" alt="Meena Profile" class="profile-pic" />
+        <p>My wife is a practicing physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University and her MD from the Texas Tech Health Sciences Center School of Medicine. She is also a DFW native, having graduated from the Texas Academy of Math and Science in Denton.</p>
+        <p>We are proud parents of two children, with our oldest son preparing to matriculate into a private school in the area this fall.</p>
       </section>
     </div>
 
@@ -237,10 +223,6 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 Gold Star Application Review</p>
-  </footer>
-</body>
-</html>
     <p>&copy; 2025 Gold Star Application Review</p>
   </footer>
 </body>
