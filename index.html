@@ -91,11 +91,11 @@
     }
     .star {
       color: gold;
-      font-size: 1.2rem;
-      margin-right: 0.3rem;
+      font-size: 1.8rem;
+      margin-right: 0.5rem;
     }
     .centered-section {
-      text-align: center;
+      text-align: left;
       background: #fff;
       padding: 2rem;
       border-radius: 8px;
@@ -124,6 +124,8 @@
     }
     .card li {
       margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
     }
     .note {
       margin-top: 2rem;
@@ -139,8 +141,9 @@
   </header>
   <nav>
     <a href="#welcome">Welcome</a>
-    <a href="#home">About Us</a>
     <a href="#services">Services</a>
+    <a href="#home">Our Story</a>
+    <a href="#about">About Us</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -151,7 +154,6 @@
     </section>
 
     <div class="top-row">
-      <!-- Services on the left -->
       <section id="services" class="section half-section">
         <h2>Services</h2>
         <p>We specialize in helping applicant families navigate the admissions processes across a wide range of academic levels, including:</p>
@@ -160,51 +162,50 @@
           <div class="card">
             <h3>Lower School Entry – Private Schools</h3>
             <ul>
-              <li><span class="star">★</span>Essay Review</li>
-              <li><span class="star">★</span>Interview Prep</li>
+              <li><span class="star">★</span> Essay Review</li>
+              <li><span class="star">★</span> Interview Prep</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>Upper School Entry – Private Schools</h3>
             <ul>
-              <li><span class="star">★</span>Essay Review</li>
-              <li><span class="star">★</span>Interview Prep</li>
+              <li><span class="star">★</span> Essay Review</li>
+              <li><span class="star">★</span> Interview Prep</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>Undergraduate Admissions</h3>
             <ul>
-              <li><span class="star">★</span>School Selection</li>
-              <li><span class="star">★</span>Essay Review</li>
-              <li><span class="star">★</span>Test Prep</li>
-              <li><span class="star">★</span>Interview Prep</li>
+              <li><span class="star">★</span> School Selection</li>
+              <li><span class="star">★</span> Essay Review</li>
+              <li><span class="star">★</span> Test Prep</li>
+              <li><span class="star">★</span> Interview Prep</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>Graduate Admissions</h3>
             <ul>
-              <li><span class="star">★</span>School Selection</li>
-              <li><span class="star">★</span>Essay Review</li>
-              <li><span class="star">★</span>Interview Prep</li>
+              <li><span class="star">★</span> School Selection</li>
+              <li><span class="star">★</span> Essay Review</li>
+              <li><span class="star">★</span> Interview Prep</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>Professional Program Admissions (MBA/MD)</h3>
             <ul>
-              <li><span class="star">★</span>School Selection</li>
-              <li><span class="star">★</span>Essay Review</li>
-              <li><span class="star">★</span>Interview Prep</li>
+              <li><span class="star">★</span> School Selection</li>
+              <li><span class="star">★</span> Essay Review</li>
+              <li><span class="star">★</span> Interview Prep</li>
             </ul>
           </div>
         </div>
         <p class="note">Note: A gold star indicates areas of focus where we offer particularly strong support based on experience.</p>
       </section>
 
-      <!-- About/Our Story on the right -->
       <section id="home" class="section half-section">
         <h2>Our Story</h2>
         <p>As DFW-based parents of two children, we began Gold Star Application Review with the mission of helping families in the metroplex achieve their academic goals.</p>
@@ -218,7 +219,7 @@
         </ul>
         <p>We are <strong style="color: green;">not</strong> career academic consultants. We are parents who are excited to share our learnings with prospective families, while providing open and honest feedback to help guide students to outcomes that are the best for them.</p>
 
-        <h2>About Us</h2>
+        <h2 id="about">About Us</h2>
         <p>I have over a decade of professional experience across a variety of industries and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University and an MBA from the Kellogg School of Management.</p>
         <p>My wife is a practicing physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University and her MD from the Texas Tech Health Sciences Center School of Medicine. She is also a DFW native, having graduated from the Texas Academy of Math and Science in Denton.</p>
         <p>We are proud parents of two children, with our oldest son preparing to matriculate into a private school in the area this fall.</p>
