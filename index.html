@@ -48,12 +48,6 @@
       flex-wrap: wrap;
       gap: 2rem;
     }
-    .left-column {
-      display: flex;
-      flex-direction: column;
-      flex: 1 1 45%;
-      gap: 2rem;
-    }
     .half-section {
       flex: 1 1 100%;
       max-width: 580px;
@@ -139,6 +133,37 @@
       font-size: 0.95rem;
       color: #555;
     }
+    .bio-block {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .bio-block img.about-photo {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .bio-block div {
+      flex: 1 1 250px;
+      min-width: 0;
+    }
+    @media (max-width: 600px) {
+      .bio-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .bio-block img.about-photo {
+        margin-bottom: 1rem;
+      }
+      .bio-block div {
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
@@ -160,29 +185,6 @@
     </section>
 
     <div class="top-row">
-      <div class="left-column">
-        <section id="home" class="section half-section">
-          <h2>Our Story</h2>
-          <p>As DFW-based parents of two children, we began Gold Star Application Review with the mission of helping families in the metroplex achieve their academic goals.</p>
-          <p>When navigating the private school admissions landscape for our oldest son, we often felt overwhelmed by the sheer volume of information from schools, online forums, and parent groups. After narrowing down the schools that resonated with our family, we wanted to ensure that our application package authentically reflected our child’s personality and conveyed how our family would contribute to the broader school community.</p>
-          <p>While we considered working with one of the many existing comprehensive admissions consulting practices, what we really needed was impartial, candid, firsthand feedback from parents within the community, to help supplement our own research.</p>
-          <p>In this spirit, Gold Star Application Review seeks to support families by:</p>
-          <ul>
-            <li><em>Providing guidance on best practices for engaging with the school community prior to application submission</em></li>
-            <li><em>Helping craft and review parent statements/admissions essays</em></li>
-            <li><em>Preparing parents and students for interviews through mock sessions</em></li>
-          </ul>
-          <p>We are <strong style="color: green;">not</strong> career academic consultants. We are parents who are excited to share our learnings with prospective families, while providing open and honest feedback to help guide students to outcomes that are the best for them.</p>
-        </section>
-
-        <section id="about" class="section half-section">
-          <h2>About Us</h2>
-          <p>I have over a decade of professional experience across a variety of industries and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University and an MBA from the Kellogg School of Management.</p>
-          <p>My wife is a practicing physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University and her MD from the Texas Tech Health Sciences Center School of Medicine. She is also a DFW native, having graduated from the Texas Academy of Math and Science in Denton.</p>
-          <p>We are proud parents of two children, with our oldest son preparing to matriculate into a private school in the area this fall.</p>
-        </section>
-      </div>
-
       <section id="services" class="section half-section">
         <h2>Services</h2>
         <p>We specialize in helping applicant families navigate the admissions processes across a wide range of academic levels, including:</p>
@@ -195,6 +197,7 @@
               <li><span class="star">★</span> Interview Prep</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Upper School Entry – Private Schools</h3>
             <ul>
@@ -202,6 +205,7 @@
               <li><span class="star">★</span> Interview Prep</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Undergraduate Admissions</h3>
             <ul>
@@ -211,6 +215,7 @@
               <li><span class="star">★</span> Interview Prep</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Graduate Admissions</h3>
             <ul>
@@ -219,6 +224,7 @@
               <li><span class="star">★</span> Interview Prep</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Professional Program Admissions (MBA/MD)</h3>
             <ul>
@@ -230,7 +236,38 @@
         </div>
         <p class="note">Note: A gold star indicates areas of focus where we offer particularly strong support based on experience.</p>
       </section>
+
+      <section id="home" class="section half-section">
+        <h2>Our Story</h2>
+        <p>As DFW-based parents of two children, we began Gold Star Application Review with the mission of helping families in the metroplex achieve their academic goals.</p>
+        <p>When navigating the private school admissions landscape for our oldest son, we often felt overwhelmed by the sheer volume of information from schools, online forums, and parent groups. After narrowing down the schools that resonated with our family, we wanted to ensure that our application package authentically reflected our child’s personality and conveyed how our family would contribute to the broader school community.</p>
+        <p>While we considered working with one of the many existing comprehensive admissions consulting practices, what we really needed was impartial, candid, firsthand feedback from parents within the community, to help supplement our own research.</p>
+        <p>In this spirit, Gold Star Application Review seeks to support families by:</p>
+        <ul>
+          <li><em>Providing guidance on best practices for engaging with the school community prior to application submission</em></li>
+          <li><em>Helping craft and review parent statements/admissions essays</em></li>
+          <li><em>Preparing parents and students for interviews through mock sessions</em></li>
+        </ul>
+        <p>We are <strong style="color: green;">not</strong> career academic consultants. We are parents who are excited to share our learnings with prospective families, while providing open and honest feedback to help guide students to outcomes that are the best for them.</p>
+      </section>
     </div>
+
+    <section id="about" class="section centered-section">
+      <h2>About Us</h2>
+      <div class="bio-block">
+        <img src="Ash_Circular.png" alt="Ash" class="about-photo">
+        <div>
+          <p>I have over a decade of professional experience across a variety of industries and currently serve in a leadership position at a Fortune 100 company in the DFW area. I hold a BS in Engineering from Texas A&M University and an MBA from the Kellogg School of Management.</p>
+        </div>
+      </div>
+      <div class="bio-block">
+        <img src="Meena_Circular.png" alt="Meena" class="about-photo">
+        <div>
+          <p>My wife is a practicing physician in the DFW area. She earned her BS in Biomedical Sciences from Texas A&M University and her MD from the Texas Tech Health Sciences Center School of Medicine. She is also a DFW native, having graduated from the Texas Academy of Math and Science in Denton.</p>
+        </div>
+      </div>
+      <p>We are proud parents of two children, with our oldest son preparing to matriculate into a private school in the area this fall.</p>
+    </section>
 
     <section id="contact" class="section centered-section">
       <h2>Contact Us</h2>
